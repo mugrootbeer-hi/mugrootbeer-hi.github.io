@@ -1,0 +1,8 @@
+      <script>
+        setInterval(function() {
+          // Select all iframes
+          Array.from(document.querySelectorAll('iframe')).forEach(function(iframe) {
+            iframe.src += 'https://petrapixel.neocities.org/widgets/lastfm?center=0&font=Helvetica&fontSize=14px&color=fff&username=beeringrootmug&swapPositions=1&delimiter=-&underline=0'; // setting src will reload the iframe
+          });
+        }, 1000 * 30); // interval of 30 seconds
+      </script>

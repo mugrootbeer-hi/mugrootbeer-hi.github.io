@@ -1,0 +1,119 @@
+/*FONTS*/
+/*helvetica (light)*/
+    @font-face {
+        font-family: "helvlight";
+        src: url("/fonts/Helvetica%20Neue%20LT%20Pro%2045%20Light.ttf") format("truetype");
+    }
+/*helvetica (bold)*/
+    @font-face {
+        font-family: "helvbold";
+        src: url("/fonts/Helvetica%20Neue%20LT%20Pro%2075%20Bold.ttf") format("truetype");
+    }
+/*deltaray*/
+    @font-face {
+        font-family: "deltaray";
+        src: url("/fonts/deltaray.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "bolddot";
+        src: url("/fonts/bold_dot_digital-7.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "dot";
+        src: url("/fonts/enhanced_dot_digital-7.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "smalldot";
+        src: url("/fonts/dot_digital-7.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "pixelarial";
+        src: url("/fonts/pixel-arial-14.otf");
+    }
+
+    @font-face {
+        font-family: "win95";
+        src: url("/fonts/W95FA.otf");
+    }
+
+    @font-face {
+        font-family: "despair";
+        src: url("/fonts/goodbyeDespair.ttf");
+    }
+
+    @font-face {
+        font-family: "pixmono";
+        src: url("/fonts/Bittypix\ Monospace.otf");
+    }
+
+    @font-face {
+        font-family: "helvout";
+        src: url(/fonts/Helvetica\ Neue\ LT\ Pro\ 75\ Bold\ Outline.otf);
+    }
+/*FONTS*/
+
+/*UTILITY*/
+    /*colours*/
+        .white {
+            color: #FFF
+        }
+
+        .crim {
+            color: crimson;
+        }
+
+        .darkcrim {
+            color: #6a001b
+        }
+        
+        .black {
+            color: #000000
+        }
+        
+        .greener {
+            color: #5cb404;
+        }
+        
+        .bluer {
+            color: #208cfc;
+        }
+
+    body {
+    background-color:rgba(255, 255, 255, 0);
+    color:white;
+    text-shadow: 0px 2px 0px #002750;
+    margin:none;
+    padding:1em;
+    overflow:hidden;
+}
+
+h2 {
+  margin:none;
+}
+
+a {
+    color: #fff;
+    text-decoration:none;
+  }
+
+a:hover {
+    text-decoration:underline;
+}
+.arrow {
+        width:3vw;
+        height:auto;
+        float: left;
+        margin-right: 4px;
+        margin-top: 4px;
+        filter: drop-shadow(0px 2px 0px #002750);
+}
+.art {
+width:85%;
+height:auto;
+border:solid 4px #044283;
+box-shadow: 0px 2px 0px #002750;
+}
