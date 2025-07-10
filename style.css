@@ -1,0 +1,56 @@
+@font-face {
+font-family: "helvlight";
+src: url("/fonts/Helvetica%20Neue%20LT%20Pro%2045%20Light.ttf") 
+format("truetype");
+}
+@font-face {
+font-family: "helvbold";
+src: url("/fonts/Helvetica%20Neue%20LT%20Pro%2075%20Bold.ttf") 
+format("truetype");
+}
+
+@font-face {
+font-family: "deltaray";
+src: url("/fonts/deltaray.ttf") 
+format("truetype");
+}
+
+deltaray {
+  font-family:"deltaray";
+}
+
+helvalight {
+  font-family:"helvlight";
+}
+
+helvabold {
+  font-family:"helvbold";
+}
+
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+  
+  .responsive {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+}
+
+  .line {
+  width: 53px;
+  height: 0;
+  border: 1px solid #C4C4C4;
+  margin: 3px;
+  display:inline-block;
+}
+  
+   .crim {
+    color: crimson;
+    }
+

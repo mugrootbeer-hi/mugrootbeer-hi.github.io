@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/fish32blueflip.png">
+    <title>mug::gallery</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/CSS.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(360deg, #054383 0%, #002750 100%) no-repeat;
+    background-color: #054383;
+    background-size: cover;
+       -webkit-font-smoothing:none;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth:never;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+  }
+    .center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+  }
+
+
+
+   .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+  .filler {
+  position: relative;
+  background: linear-gradient(180deg, #208cfc 0%, #1f87f9 100%);
+  height: 200vh;
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-top:1em solid #208cfc;
+  }
+  
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.image2 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.poobar {
+    position: relative;
+    height: 1.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: .5em 0 .5em 0;
+  }
+  .welcome {
+  margin: 0; 
+  padding:10px; 
+  font-family: helvbold;
+  background: linear-gradient(90deg, #208cfc 30%, #54061200 90%) no-repeat;
+  overflow: hidden;
+  color: white;
+  font-size: 180%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.container div {
+  background-color: red;
+  aspect-ratio: 1;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+    text-decoration:underline;
+}
+    
+    .wrap{
+      margin: 0 auto;
+      width: 40em;
+      }
+      
+    </style>
+        <script>
+          function resizeIframe() {
+              var iframe = document.getElementById('myIframe');
+              iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 100 + 'px' ;
+          }
+      
+          window.addEventListener('load', resizeIframe);
+          window.addEventListener('resize', resizeIframe);
+      </script>
+  </head>
+ <body>
+  <div class="wrap">
+  <div class="parent">
+  <img class="image1" src="/assets/thegallery.jpeg">
+</div>
+<div class="poobar">
+<h1 style="font-family: deltaray; margin: 0" class="bluer">
+  <a style="font-family: deltaray; margin: 0" class="bluer" href=/preview.html>home.</a><span class="bluer"><a style="font-family: deltaray;" class="bluer" href=/blog.html>blog.</a><span class="white">gallery.</span><a class=bluer href=/about.html>about.</a></span><a href=more.html target="blank"><img class=fish src="https://mugrootbeerbeer.neocities.org/assets/fish32blueflip.png" style= "float: right;"></a></h1>
+
+</div>
+<div class=welcome>
+  <em>thegallery.<span style="font-family:helvout; opacity:100%">thegallery.</span><span style="font-family:helvout; opacity:80%">thegallery.</span><span style="font-family:helvout; opacity:60%">thegallery.</span><span style="font-family:helvout; opacity:40%">thegallery.</span><span style="font-family:helvout; opacity:20%">thegallery.</span></em></div>
+  
+    <div class="filler">
+      <img src="assets/pipbl.png" class=pip style="width:auto; height:11em; position:absolute; right:1px; top:-2em">
+    <p class=white style="padding:1em; padding-top:0px; padding-bottom:0px; font-family:win95; size:16px; width:75%">An assortment of pieces, ranging from 2023 to the latest.<br>Click on a square to view the full piece. If you want an even closer look, once opened, right-click on the image and "Open image in new tab".</p>
+      
+    <iframe src="gallery/grids.htm" width=100% height="100%" style="border:none">
+      </iframe>
+    </div>
+    <img src="/assets/footerblue.jpeg" alt="the footer." class="center">
+  </div>
+
+
+</body></html>

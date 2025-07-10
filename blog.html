@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/fish32flipgreen.png">
+    <title>mug::blog</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/CSS.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(360deg, #275601 0%, #102f00 100%) no-repeat;
+    background-color: #275601;
+    background-size: cover;
+  
+      -webkit-font-smoothing:none;
+      -moz-osx-font-smoothing: grayscale;
+      font-smooth: never;
+      text-size-adjust: none;
+      -webkit-text-size-adjust: none;
+  }
+    .center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+  }
+
+     .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+
+  .filler {
+     position: relative;
+  background: #5cb404;
+  height: fit-content;
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+       padding: 2em;
+     padding: 1em;
+  }
+  
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.image2 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.poobar {
+    position: relative;
+    height: 1.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: .5em 0 .5em 0;
+  }
+
+  .yapbox {
+    overflow-x:none;
+  width:100%;
+  border:none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: 1px;  /* Firefox */
+  scrollbar-color:red;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.yapbox::-webkit-scrollbar-track {
+    background:#00000000;
+}
+.yapbox::-webkit-scrollbar-thumb {
+    background-color:#00000000;
+    border: 0px solid #ff000000;
+}
+
+.welcome {
+  margin: 0; 
+  padding:10px; 
+  font-family: helvbold;
+  background: linear-gradient(90deg, #5cb404 30%, #54061200 90%) no-repeat;
+  overflow: hidden;
+  color: white;
+  font-size: 180%;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+    text-decoration:underline;
+}
+    
+    .wrap{
+      margin: 0 auto;
+      width: 40em;
+      }
+      
+
+    </style>
+    
+    <script>
+      function resizeIframe() {
+          var iframe = document.getElementById('myIframe');
+          iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 100 + 'px' ;
+      }
+  
+      window.addEventListener('load', resizeIframe);
+      window.addEventListener('resize', resizeIframe);
+  </script>
+
+  </head>
+ <body>
+  <div class="wrap">
+  <div class="parent">
+  <img class="image1" src="/assets/theblog.jpeg">
+</div>
+<div class="poobar">
+<h1 style="font-family: deltaray; margin: 0" class="greener">
+  <a style="font-family: deltaray; margin: 0" class="greener" href=/preview.html>home.</a><span class="white">blog.</span><a style="font-family: deltaray;" class="greener" href=/gallery.html>gallery.</a><a class=greener href=/about.html>about.</a><a href=/more.html target="blank"><img class=fish src="https://mugrootbeerbeer.neocities.org/assets/fish32flipgreen.png" style= "float: right;"></a></h1>
+
+</div>
+<div class=welcome><em>theblog.<span style="font-family:helvout; opacity:100%">theblog.</span><span style="font-family:helvout; opacity:80%">theblog.</span><span style="font-family:helvout; opacity:60%">theblog.</span><span style="font-family:helvout; opacity:40%">theblog.</span><span style="font-family:helvout; opacity:20%">theblog.</span></em></div>
+
+    <div class="filler"> <img src="/assets/pipb.png" class=pip style="position:absolute; float:right; width:auto; height:10em; right:2em; top:-5em">
+      <iframe class="yapbox" id="myIframe" title=help style="margin:0; overflow: hidden;" src="blog/yapbox.htm"></iframe>
+      
+      </div>
+    <img src="/assets/footergreen.jpeg" alt="the footer." class="center">
+  </div>
+
+
+</body></html>

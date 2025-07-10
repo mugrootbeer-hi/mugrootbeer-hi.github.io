@@ -1,0 +1,261 @@
+/*FONTS*/
+/*helvetica (light)*/
+    @font-face {
+        font-family: "helvlight";
+        src: url("/fonts/Helvetica%20Neue%20LT%20Pro%2045%20Light.ttf") format("truetype");
+    }
+/*helvetica (bold)*/
+    @font-face {
+        font-family: "helvbold";
+        src: url("/fonts/Helvetica%20Neue%20LT%20Pro%2075%20Bold.ttf") format("truetype");
+    }
+/*deltaray*/
+    @font-face {
+        font-family: "deltaray";
+        src: url("/fonts/deltaray.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "bolddot";
+        src: url("/fonts/bold_dot_digital-7.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "dot";
+        src: url("/fonts/enhanced_dot_digital-7.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "smalldot";
+        src: url("/fonts/dot_digital-7.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "pixelarial";
+        src: url("/fonts/pixel-arial-14.otf");
+    }
+
+    @font-face {
+        font-family: "win95";
+        src: url("/fonts/W95FA.otf");
+    }
+
+    @font-face {
+        font-family: "despair";
+        src: url("/fonts/goodbyeDespair.ttf");
+    }
+
+    @font-face {
+        font-family: "pixmono";
+        src: url("/fonts/Bittypix\ Monospace.otf");
+    }
+
+    @font-face {
+        font-family: "helvout";
+        src: url(/fonts/Helvetica\ Neue\ LT\ Pro\ 75\ Bold\ Outline.otf);
+    }
+/*FONTS*/
+
+/*UTILITY*/
+    /*colours*/
+        .white {
+            color: #FFF
+        }
+
+        .crim {
+            color: crimson;
+        }
+
+        .darkcrim {
+            color: #6a001b
+        }
+        
+        .black {
+            color: #000000
+        }
+        
+        .greener {
+            color: #5cb404;
+        }
+        
+        .bluer {
+            color: #208cfc;
+        }
+    /*text-align*/
+        .right {
+            text-align: right;
+        }
+
+    /*box*/
+    /*you can reuse this at any portion of the page, the main purpose of "top-left" is to simply place them
+    where they need to be.*/
+        .box {
+            background-color: #6a001b;
+            padding: 30px;
+            height: 200px;
+            border-bottom-right-radius: 1em;
+            border-top-left-radius: 1em;
+            color: #fff;
+            clip-path: polygon(0 20%,
+                    10% 0,
+                    90% 0,
+                    100% 0%,
+                    100% 80%,
+                    90% 100%,
+                    0% 100%,
+                    0% 80%);
+            overflow: hidden;
+        }
+
+        .box:before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            box-shadow: 0 0 0 250px #6a001b00;
+            transform: rotate(45deg);
+
+        }
+/*UTILITY*/
+
+
+/*BODY (+ other basic shit)*/
+/*if you want to apply something throughout the entire page, this is a good place to do it.
+I noticed in your code you tended to manually apply fonts in-line, which does have it's use cases
+but you can set a base font here and go from there.*/
+body {
+    
+    font-family: "helvlight";
+    margin: 0;
+    padding: 0;
+    
+}
+
+p {
+    color:white;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+/*BODY*/
+
+/*MAIN LAYOUT*/
+    /*wrapper - the main container that holds every other div inside of the layout*/
+    /*note: "margin: 0 auto" centers the div horizontally.*/
+        .wrapper {
+            margin: 0 auto;
+            width: 1470px;
+        }
+        
+        .pip {
+            height:10em;
+            transition:0.1s ease-out;
+          }
+          .pip:hover {
+            filter:drop-shadow(0px 0px 2px white);
+          }
+
+        .fish {
+            float:right;
+            transition:0.1s ease-in-out;
+        }
+        .fish:hover {
+            filter:drop-shadow(0px 5px 5px black);
+            scale:1.1;
+        }
+        .fish:active {
+            scale:0.8;
+            filter:none;
+        }
+    /*main - holds all of the main meat together... ew, gross.*/
+        .main {
+            background: url(/assets/eueue.png);
+            background-size: cover;
+            height: 94%;
+        }
+
+    /*footer*/
+    .footer {
+        background: crimson;
+        padding: 5px 10px 5px 10px;
+        height: 10%;
+    }
+
+
+    /*top left - holds all of the boxes together.*/
+    .top-left {
+        display: block;
+        padding: 10px;
+        width: 24%;
+    }
+/*MAIN LAYOUT*/
+
+/*TITLE TEXT*/
+.title {
+    font-size: 2.7em;
+    font-family: "helvbold";
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+/*TITLE TEXT*/
+
+/*LINKS*/
+    .links {
+        font-family: "deltaray";
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 2em;
+    }
+    /*note: i used "display: flex" so you can put multiple links
+    in a row. use "p" to create a new line if needed.*/
+
+    .additional {
+        font-family: "helvlight";
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1em;
+    }
+/*This is to ensure there isn't any weird spacing between
+lines. I still used the "p" class as "br" did not actually break
+the line, while "p" does.*/
+    .links p {
+        padding: 0;
+        margin: 0;
+    }
+/*LINKS*/
+
+/* i don't know what these are, looks like they are not being used but i'm keeping it here
+for organization's sake:*/
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+.line {
+    width: 53px;
+    height: 0;
+    border: 1px solid #C4C4C4;
+    margin: 3px;
+    display: inline-block;
+}
+
+/*Xenos was here*/

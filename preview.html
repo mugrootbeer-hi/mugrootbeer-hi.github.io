@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon32flip.png">
+    <title>mug::home</title>
+    <!-- GAY LUIGI?! The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <!--NEO WAS HERE-->
+    <link href="/CSS.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+
+    :root {
+      --color1: #6a001b;
+      --color2: #38040c;
+      --color3: #dc143c;
+      --color4: rgb(97, 10, 32);
+      --color5: #880e26;
+    }
+       
+    body, html {
+      height: 100%;
+      margin: 0;
+      background: linear-gradient(360deg, #6a001b 0%, #38040c 100%) no-repeat;
+      background-color: #6a001b;
+      background-size: cover;
+      -webkit-font-smoothing:none;
+      -moz-osx-font-smoothing: grayscale;
+      font-smooth: never;
+      text-size-adjust: none;
+      -webkit-text-size-adjust: none;
+    }
+  
+  .center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+  }
+   .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+  .filler {
+     position: relative;
+  background-color: #dc143c;
+    /*background: #ff0d3d;*/
+    /*background: radial-gradient(farthest-corner at 50% 0%, rgba(255, 13, 61, 1) 0%, rgba(209, 19, 38, 1) 51%, rgba(158, 3, 34, 1) 100%);*/
+  height: 60em;
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+       padding: 2em;
+     padding: 1em;
+  }
+  
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.image2 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.poobar {
+    position: relative;
+    height: 1.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: .5em 0 .5em 0;
+  }
+
+
+  .container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.6fr;
+  gap: 8px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "galleryc blurbc"
+    "galleryc blogc"
+    "lastfmc lastfmc";
+}
+
+.galleryc { grid-area: galleryc; }
+
+.blurbc { grid-area: blurbc; }
+
+.blogc { grid-area: blogc; }
+
+.lastfmc { grid-area: lastfmc; }
+
+
+.blurb {
+  grid-area: blurbc;
+  position: relative;
+  height: auto;
+  width: auto;
+  border:solid rgb(97, 10, 32) 3px;
+  text-shadow: -0px 2px 0 #38040c;
+  font-family:despair;
+  font-size:14px;
+  background: linear-gradient(0deg, #880e26 0%, #38040c 100%);
+  background-color:#38040c;
+  /*background: linear-gradient(0deg,rgba(158, 17, 46, 1) -60%, rgba(89, 4, 21, 1) 50%);*/
+  /*background: radial-gradient(farthest-corner at 50% 100%, rgb(141, 7, 34) 0%, #6a001b 30%, #38040c 100%) no-repeat;*/
+  /*background-color:#79091d;*/
+  padding:9px;
+  box-shadow: 0px 3px 0px #38040c;
+  transition:0.2s ease-out;
+}
+.blurb:hover {
+  box-shadow: 0px 0px 20px rgb(255, 185, 185);
+}
+
+.lattach{
+  position:relative;
+  width:10em; height:10em;
+  float:right; 
+}
+
+.latestblog {
+  grid-area: blogc;
+  position: relative;
+  height: auto;
+  width: auto;
+  border:solid #194d00 3px;
+  text-shadow: -0px 2px 0 #102f00;
+  font-family:despair;
+  font-size:14px;
+  background: linear-gradient(0deg, #5cb404 0%, #305f01 100%);
+  background-color:#305f01;
+  padding:9px;
+  box-shadow: 0px 3px 0px #102f00;
+  color:white;
+  transition:0.2s ease-out;
+}
+.latestblog:hover {
+  box-shadow:0px 0px 20px rgb(131, 255, 36);
+}
+.latestblog:active {
+  box-shadow:0px 0px 5px rgb(131, 255, 36);
+  background: linear-gradient(0deg, #5cb404 0%, #305f01 50%, #274b02 100%);
+  scale:0.99;
+}
+
+.latestart {
+  grid-area: galleryc;
+  position: relative;
+  height: auto;
+  width:auto;
+  border:solid #002750 3px;
+  box-shadow: 0px 3px 0px #021931;
+  background-repeat: no-repeat;
+  background-position:bottom;
+  background-size:contain;
+  background-image: url("/thumbnails/2025/deltarune.png");
+  font-size:14px;
+  text-shadow: -0px 2px 0 #002750;
+  margin:0;
+  transition:0.2s ease-out;
+      }
+
+.latestart:hover {
+  box-shadow: 0px 0px 20px rgb(43, 195, 255);
+  filter:brightness(120%);
+}
+.latestart:active {
+  scale:0.99;
+  box-shadow: 0px 0px 5px rgb(43, 195, 255);
+  filter:brightness(90%);
+}
+
+.thumb {
+  display:block;
+  height:100%;
+  width:auto;
+  background: linear-gradient(180deg,rgb(10, 56, 105) 10%, rgb(20, 86, 156) 40%, rgba(89, 4, 21, 0) 80%);
+  font-family:despair;
+  color:white;
+  margin:0;
+  transition:0.2s ease-out;
+}
+.thumb:active {
+  background: linear-gradient(180deg,rgb(13, 63, 117) 20%, rgba(89, 4, 21, 0) 80%);
+}
+
+.welcome {
+  margin: 0; 
+  padding:10px; 
+  font-family: helvbold;
+  background: linear-gradient(90deg, #dc143c 30%, #54061200 90%) no-repeat;
+  overflow: hidden;
+  color: white;
+  font-size: 180%;
+}
+  
+a:link {
+  text-decoration: none;
+  color:unset;
+}
+a:hover {
+    text-decoration:underline;
+}
+.lastfm {
+  position: sticky;
+  bottom: 0;
+  grid-area:lastfmc;
+  box-sizing: border-box;
+  border: 3px solid rgb(97, 10, 32);
+  width: 100%;
+  height: 8em;
+  box-shadow: 0px 3px 0px #38040c;
+  background: linear-gradient(0deg, #880e26 0%, #38040c 100%);
+  background-color:#38040c;
+  float:right;
+  margin-bottom:4px;
+  transition:0.2s ease-out;
+}
+.lastfm:hover {
+  box-shadow: 0px 0px 20px rgb(255, 185, 185);
+}
+
+.wrap{
+  margin: 0 auto;
+  width: 40em;
+}
+
+.title {
+  margin:0;
+  font-family:despair; 
+  font-size:16px; 
+  text-shadow: -0px 2px 0 #38040c;
+  text-shadow: -1px -1px 0 #38040c, 1px -1px 0 #38040c, -0px 2px 0 #38040c, 1px 1px 0 #38040c;
+  color: crimson;
+  width:100%;
+}
+      
+.title2 {
+        margin:0;
+        font-family:despair; 
+        font-size:16px; 
+        text-shadow: -0px 2px 0 #002750;
+        text-shadow: -1px -1px 0 #002750, 1px -1px 0 #002750, -0px 2px 0 #002750, 1px 1px 0 #002750;
+        color:#2990ff;
+        padding-top:0.5em;
+        padding-left:0.5em;
+      }
+
+.title3 {
+        margin:0;
+        font-family:despair; 
+        font-size:16px; 
+        text-shadow: -0px 2px 0 #102f00;
+        text-shadow: -1px -1px 0 #102f00, 1px -1px 0 #102f00, -0px 2px 0 #102f00, 1px 1px 0 #102f00;
+        color:#5cb404;
+}
+
+
+    </style>
+
+  </head>
+ <body>
+  <div class="wrap">
+  <div class="parent">
+  <img class="image1" src="/assets/heeader.jpeg">
+</div>
+<div class="poobar">
+<h1 style="font-family: deltaray; margin: 0" class="white">
+  home.<span class="crim"><a style="font-family: deltaray;" class="crim" href=/blog.html>blog.</a><a style="font-family: deltaray;" class="crim" href=/gallery.html>gallery.</a><a class=crim href=/about.html>about.</a></span><a href=/more.html target="blank"><img class="fish" src="https://mugrootbeerbeer.neocities.org/assets/favicon32flip.png" style= "float: right"></a></h1>
+</div>
+
+<div class=welcome>
+<em>welcome.<span style="font-family:helvout; opacity:100%">welcome.</span><span style="font-family:helvout; opacity:80%">welcome.</span><span style="font-family:helvout; opacity:60%">welcome.</span><span style="font-family:helvout; opacity:40%">welcome.</span><span style="font-family:helvout; opacity:20%">welcome.</span></em></div>
+
+<div class="filler">
+  <p class=white style="margin-top:0; width:100%; font-size:16px; line-height: 1; font-family:win95;">
+    <img src="/assets/pipw.png" class="pip" style="position:absolute; height:10em; right:-2.5em; top:-3em">
+    It seems you've stumbled upon my page.<br>(Mind the mess, I'm in the thick of maintenance!)<br><br>
+    <br>This website's layout was made with a 1366x768<br> desktop screen resolution in mind. 
+    <span style=width:100%>It has been tested<br> on various Chromium and Firefox-based browsers. I can't guarantee they'll all work, though. I'm not that good yet.
+    <br><br>While I freshen up the place a little,<br><br>
+   Here's the latest:</span></p>
+
+       <div class="container">
+        <a href="/gallery.html"><div class="latestart" style=color:white>
+          <div class=thumb><p class="title2">the gallery:</p>
+            <p style="margin-top:0; margin-left:0.5em; margin-bottom:0px;">my latest piece as of july 10th, 2025!<br>click here to enter the gallery.</p>
+            <img src="assets/pipd.png" class=pip style="position:relative; width:10em; height:10em; top:8em; right:3em">
+          </div></a>
+        </div>
+        <div class="blurb" style="color:white">
+          <img class="pip" src="/assets/piph.png" style=float:right alt="pip drawing">
+          <p style=margin:0><span class=title>the blurb:</span>
+            <br>holy fuck <br><u><a href="https://www.youtube.com/watch?v=Phh3oVCtzBg">new geese</a></u> im going to explode holy fuck holy fuck holy fuck</div>
+        <a href="/blog.html"><div class="latestblog"><p style="margin:0"><span class="title3">the blog:</span>
+          <br>the first post! (june 19th, 2025)<br><br>
+          "V1 is here! It's finally finished!! But really, I wouldn't say finished. Moreso finally good enough for it to not be hidden by a cryptic index page..."</p>
+        </a></div>
+        <div class=lastfm>
+          <iframe id=lastfm 
+          src="https://mugrootbeer.nekoweb.org/lastfm/lastfm.htm" 
+          style="border:none; width:100%; height:10em;" 
+          title="Updated every 20 seconds.">
+        </iframe>
+        <img src="assets/pipm.gif" class=pip style="position:relative; width:8em;height:8em; bottom:10em; left:5em; float:right">
+        <img src="assets/pipsleep.png" style="visibility:hidden">
+      </div>
+      </div>
+      
+    </div>
+    
+  
+    <img src="/assets/footered.jpeg" alt="the footer." class="center">
+  </div>
+
+</body>
+
+<script>
+  var iframe = document.getElementById("lastfm");
+  var widget = iframe.conten
+  var playlistDiv = iframe.contentWindow.document.getElementById("playlist")[0];
+  var playing = iframe.contentWindow.document.getElementByClassName("nowplaying")[0];
+
+  document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("DOM fully loaded and parsed");
+    
+  console.log("shitiframe:", iframe);
+  console.log("shit1:", playlistDiv);
+  console.log("shit2:", playing);
+  });
+</script>
+
+</html>
