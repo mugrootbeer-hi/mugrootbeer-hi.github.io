@@ -1,0 +1,37 @@
+This is not a well thought-out post. All this is, is rambling with some opinions sprinkled in. Viewer discretion is not advised because I eated it
+
+V1 is here! It's finally finished!! But really, I wouldn't say finished. Moreso, finally good enough for it to not be hidden by a cryptic index page. 
+
+These four html files have been stuck in development for around a full year, despite everything only really picking up around two months ago. Looking back at all the work my friends and I've put into making this website a real thing, it's dawned on me ever since I resumed work on V1 that, with all the unique assets and pages already made, I've put the blog off for far too long.
+
+[WHY DO SUCH A THING?]
+
+I, like many other folks of the 'chronically online' kind, have fallen victim to the lulling comfort of being limited to 280 characters or less to express our opinions on any and every subject, absorbing information as quickly as we can regurgitate it, alongside the expectation of instant responses to any of our thoughts. This instills a mindset that makes writing a coherent, longer-form piece of text feel like an insurmountable chore (Why bother spending more than five minutes thinking of a subject thoroughly, when [PLATFORM] is here to tell you what to think instead? Very healthy). In this case, I don't think there's any better way to break the ice than by making my first blog post strictly about the website and why I chose to make it. No one's ever done that before.
+
+Those with a keen eye and top-level reading comprehension skills might've noticed that I refused to refer to this website as "finished".
+
+[I DID.]
+
+Good job!
+
+[THANK YOU!]
+
+As is common knowledge, websites are ever-morphing creatures of sorts that follow the content inside them and a balance between the creator's vision & their will to make it a reality. By nature they are supposed to be constantly evolving, and putting a website off as "finished" is, in my opinion... Really not the way to do it. 
+
+[WHAT'S WRONG WITH THAT?]
+
+I don't think websites are quite like other art mediums, in the way that after "finishing" a piece, you sorta just... Put it away and move on to the next, the same way you would a piece of music, an animation, a book. Of course, all these mediums require significant work and can often turn out to be much more time-consuming than a lot of websites can and to be fair, I think my perception of art has been slightly shifted by social media and its constant need for Everything Big Now. 
+
+Still, a website can be cared for, updated, revised at any time, and it is in a constant state of both being 'out' and being actively worked on. It's living, in a way. It lives as long as you do. Regenerating constantly. Needing you to please, please feed it more clunky iframe layouts filled with stuff no-one's willing to read.
+
+Of course, for the sake of this opinion, by "website" I mean personal pages that you have CONTROL of. Not big content-aggregating machines. Though those also depend on the users to keep them alive, there exists an entirely different relationship between developer and website when there's no userbase involved, just you and whatever you intend to show to the world. THAT'S what I'm referring to. Forums, microblogging sites and other similarly social projects are one entirely different beast.
+
+[WHAT ABOUT *YOUR* WEBSITE?]
+
+At the time of writing this, I am yet to consider how to lay everything out for the page this'll be displayed on. I have a somewhat clear plan (just do whatever I did with the gallery) I don't reckon it's gonna look very pretty but it'll work and that's what matters for now.
+As you might be able to tell, the entire site is written in HTML and CSS (with minimal javascript used in order to make the last.fm iframe widget refresh after a given amount of time) so I really don't have that deep of a knowledge well to pull from when it comes to this kinda stuff. I've looked around, been advised to and briefly considered using static site generators such as 11ty or Hugo and they all look like brilliant tools, but I'd rather hold that off until I've learned what it truly means to manage 29 separate html files for each item in a gallery. (I'll have to rebuild this entire thing from the ground up eventually anyway...)
+I'd like to create an RSS feed that updates automatically with each new blog/gallery entry, eventually. That would be pretty cool but I don't know how to do that yet.
+
+I envision this website to act as a both personal and public repository of works I'm proud of, as well as thoughts and opinions on music, creative processes and future projects. In an ideal world, I'd use this as a way to forever ditch social media, but it's become so ubiquitous with internet life that I don't really see that happening now, given just *how* many people use it as their only mark on the web, no matter what platform. Regardless, I feel this project helped me learn many things I would've otherwise completely taken for granted. I hope to learn more and improve as I go on. That's my main, biggest goal, everything else aside.
+
+I'll see you next blog entry, whenever I feel like making one.
