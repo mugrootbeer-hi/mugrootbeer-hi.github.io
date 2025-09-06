@@ -32,7 +32,7 @@
       text-size-adjust: none;
       -webkit-text-size-adjust: none;
     }
-  
+
   .center {
    display: block;
    margin-left: auto;
@@ -58,6 +58,10 @@
      padding: 1em;
   }
   
+        @keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .image1 {
     position: relative;
     top: 0;
@@ -98,6 +102,10 @@
     "galleryc blurbc"
     "galleryc blogc"
     "lastfmc lastfmc";
+            animation-duration: 0.4s;
+            animation-name: animate-fade;
+            animation-delay: 0.4s;
+            animation-fill-mode: backwards;
 }
 
 .galleryc { grid-area: galleryc; }
@@ -124,8 +132,14 @@
   /*background: radial-gradient(farthest-corner at 50% 100%, rgb(141, 7, 34) 0%, #6a001b 30%, #38040c 100%) no-repeat;*/
   /*background-color:#79091d;*/
   padding:9px;
+  padding-right:0px;
   box-shadow: 0px 3px 0px #38040c;
   transition:0.2s ease-out;
+  
+            animation-duration: 0.4s;
+            animation-name: animate-fade;
+            animation-delay: 0.5s;
+            animation-fill-mode: backwards;
 }
 .blurb:hover {
   box-shadow: 0px 0px 20px rgb(255, 185, 185);
@@ -152,6 +166,11 @@
   box-shadow: 0px 3px 0px #102f00;
   color:white;
   transition:0.2s ease-out;
+  
+            animation-duration: 0.4s;
+            animation-name: animate-fade;
+            animation-delay: 0.6s;
+            animation-fill-mode: backwards;
 }
 .latestblog:hover {
   box-shadow:0px 0px 20px rgb(131, 255, 36);
@@ -234,6 +253,11 @@ a:hover {
   float:right;
   margin-bottom:4px;
   transition:0.2s ease-out;
+  
+            animation-duration: 0.4s;
+            animation-name: animate-fade;
+            animation-delay: 0.7s;
+            animation-fill-mode: backwards;
 }
 .lastfm:hover {
   box-shadow: 0px 0px 20px rgb(255, 185, 185);
@@ -274,7 +298,11 @@ a:hover {
         color:#5cb404;
 }
 
-
+p {
+            animation-duration: 0.4s;
+            animation-name: animate-fade;
+            animation-delay: 0.4s;
+            animation-fill-mode: backwards;}
     </style>
 
   </head>
@@ -298,7 +326,7 @@ a:hover {
     <br>This website's layout was made with a 1366x768<br> desktop screen resolution in mind. 
     <span style=width:100%>It has been tested<br> on various Chromium and Firefox-based browsers. I can't guarantee they'll all work, though. I'm not that good yet.
     <br><br>While I freshen up the place a little,<br><br>
-   Here's the latest:</span></p>
+   <span style=font-family:helvbold>here's the latest:</span></span></p>
 
        <div class="container">
         <a href="/gallery.html"><div class="latestart" style=color:white>
@@ -308,18 +336,19 @@ a:hover {
           </div></a>
         </div>
         <div class="blurb" style="color:white">
-          <img class="pip" src="/assets/piph.png" style=float:right alt="pip drawing">
-          <p style=margin:0><span class=title>the blurb:</span>
-            <br>holy fuck <br><u><a href="https://www.youtube.com/watch?v=Phh3oVCtzBg">new geese</a></u> im going to explode holy fuck holy fuck holy fuck</div>
+          <img class="pip" src="/assets/pipq.png" style=float:right alt="pip drawing">
+          <p style=margin:0><span class=title>the blurb:</span><br>
+            who is gentoo for? seriously, who is it for? who would ever want to put themselves through something like gentoo? i need to know.</p></div>
         <a href="/blog.html"><div class="latestblog"><p style="margin:0"><span class="title3">the blog:</span>
           <br>the first post! (june 19th, 2025)<br><br>
           "V1 is here! It's finally finished!! But really, I wouldn't say finished. Moreso finally good enough for it to not be hidden by a cryptic index page..."</p>
         </a></div>
         <div class=lastfm>
-          <iframe id=lastfm 
+          <iframe id=lastfm
           src="https://mugrootbeer.nekoweb.org/lastfm/lastfm.htm" 
           style="border:none; width:100%; height:10em;" 
-          title="Updated every 20 seconds.">
+          title="Updated every 20 seconds."
+          base target="_blank">
         </iframe>
         <img src="assets/pipm.gif" class=pip style="position:relative; width:8em;height:8em; bottom:10em; left:5em; float:right">
         <img src="assets/pipsleep.png" style="visibility:hidden">

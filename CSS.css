@@ -123,6 +123,7 @@
 /*if you want to apply something throughout the entire page, this is a good place to do it.
 I noticed in your code you tended to manually apply fonts in-line, which does have it's use cases
 but you can set a base font here and go from there.*/
+
 body {
     
     font-family: "helvlight";

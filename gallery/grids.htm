@@ -25,7 +25,7 @@
     filter:brightness(120%);
 }
 .container div:active {
-  transform: scale(1.0) translateY(5px);
+  transform: scale(1.0) translateY(1px);
   border:dotted 2px #002750;
   box-shadow: 0px -2px 0px rgb(2, 58, 100);
   filter:brightness(70%);
@@ -50,7 +50,15 @@
             font-family: despair;
             padding:1em;
             overflow:hidden;
+            animation-duration: 0.4s;
+            animation-name: animate-fade;
+            animation-delay: 0.2s;
+            animation-fill-mode: backwards;
         }
+        @keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 </style>
     </head>
     <body>

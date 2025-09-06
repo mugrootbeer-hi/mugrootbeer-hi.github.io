@@ -89,8 +89,12 @@
     margin:none;
     padding:1em;
     overflow:hidden;
+      animation-duration: 0.2s;
+  animation-name: animate-fade;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
+    
 }
-
 h2 {
   margin:none;
 }
@@ -102,6 +106,7 @@ a {
 
 a:hover {
     text-decoration:underline;
+    cursor:url(/assets/cursor2.png), auto;
 }
 .arrow {
         width:3vw;
@@ -116,4 +121,13 @@ width:85%;
 height:auto;
 border:solid 4px #044283;
 box-shadow: 0px 2px 0px #002750;
+  animation-duration: 0.2s;
+  animation-name: animate-fade;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
