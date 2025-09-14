@@ -40,7 +40,7 @@ body, html {
   .filler {
   position: relative;
   background: linear-gradient(180deg, #208cfc 0%, #1f87f9 100%);
-  height: 200vh;
+  height: 250vh;
   display: block;
    margin-left: auto;
    margin-right: auto;
@@ -108,15 +108,6 @@ a:hover {
       }
       
     </style>
-        <script>
-          function resizeIframe() {
-              var iframe = document.getElementById('myIframe');
-              iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 100 + 'px' ;
-          }
-      
-          window.addEventListener('load', resizeIframe);
-          window.addEventListener('resize', resizeIframe);
-      </script>
   </head>
  <body>
   <div class="wrap">
@@ -135,7 +126,7 @@ a:hover {
       <img src="assets/pipbl.png" class=pip style="width:auto; height:11em; position:absolute; right:1px; top:-2em">
     <p class=white style="padding:1em; padding-top:0px; padding-bottom:0px; font-family:win95; size:16px; width:75%">An assortment of pieces, ranging from 2023 to the latest.<br>Click on a square to view the full piece. If you want an even closer look, once opened, right-click on the image and "Open image in new tab".</p>
       
-    <iframe src="gallery/grids.htm" width=100% height="100%" style="border:none">
+    <iframe src="gallery/grids.htm" width=100% height="100%" style="position:relative; border:none">
       </iframe>
     </div>
     <img src="/assets/footerblue.jpeg" alt="the footer." class="center">

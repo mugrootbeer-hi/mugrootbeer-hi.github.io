@@ -93,6 +93,7 @@
   animation-name: animate-fade;
   animation-delay: 0s;
   animation-fill-mode: backwards;
+  position:sticky;
     
 }
 h2 {
@@ -125,6 +126,7 @@ box-shadow: 0px 2px 0px #002750;
   animation-name: animate-fade;
   animation-delay: 0.4s;
   animation-fill-mode: backwards;
+   position:sticky;
 }
 
 @keyframes animate-fade {
